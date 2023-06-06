@@ -25,13 +25,5 @@ Instructions for Setup and Deployment:
 4. Start the development server: `python manage.py runserver`
 5. In poweshell scripts are not allowed,therefore we have to switch to cmd from terminal settings/vs code settings.
 
-Please note that this project uses a virtual environment (`.venv`) to manage its dependencies. It is recommended to activate the virtual environment before running the project.
-
-[Include any additional information or instructions specific to your project]
-
-Contributions and Issue Reporting:
-Contributions and feedback are welcome! If you encounter any issues or have suggestions for improvements, please open an issue on GitHub.
-
-License:
-[Specify the license under which your project is shared]
+The code is in master branch.
 
