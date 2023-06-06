@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      body {
+        background-color: #6495ED;
+        padding: 20px;
+        font-family: "Geologica", sans-serif;
+        color: black;
+      }
+      
+      form {
+        margin-top: 20px;
+      }
+      
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+      
+      input[type="text"],
+      input[type="email"],
+      input[type="date"],
+      textarea {
+        background-color: white;
+        color: black;
+        font-family: "Geologica", sans-serif;
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+      
+      button[type="submit"] {
+        background-color: white;
+        color: black;
+        font-family: "Geologica", sans-serif;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+      }
+    </style>
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $(function() {
+        $( "#id_dob" ).datepicker();
+      });
+    </script>
+  </head>
+  <body>
+    <h1>Contact Form</h1>
+    <form method="post" action=".">
+      {% csrf_token %}
+
+      <label for="{{ form.name.id_for_label }}">Name:</label>
+      {{ form.name }}<br>
+
+      <label for="{{ form.email.id_for_label }}">Email:</label>
+      {{ form.email }}<br>
+
+      <label for="{{ form.content.id_for_label }}">Content:</label>
+      {{ form.content }}<br>
+      
+      <label for="{{ form.phone_number.id_for_label }}">Phone Number:</label>
+      {{ form.phone_number }}<br>
+      
+      <label for="{{ form.class_name.id_for_label }}">Class:</label>
+      {{ form.class_name }}<br>
+      
+      <label for="{{ form.dob.id_for_label }}">Date of Birth:</label>
+      {{ form.dob }}<br>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
