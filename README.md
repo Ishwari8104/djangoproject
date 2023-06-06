@@ -1,2 +1,37 @@
 # djangoproject
 The tech stacks I have used are django, python, html and css.
+Project Name
+Contact Form
+
+Description:
+This is a Django-based web application that allows users to fill out a contact form and sends an email to the recipient(in this case,me at datir.ishwari@gmail.com). It is built using Django framework.
+
+Tech Stack:
+- Django
+- HTML/CSS
+
+Server Requirements:
+- Python 3.11(I have used here)
+- Django framework
+- Virtual environment (`.venv`)
+
+Instructions for Setup and Deployment:
+
+1. Create a virtual environment: `python -m venv .venv`
+2. Activate the virtual environment:
+   - On Windows: `.venv\Scripts\activate`
+   - On macOS/Linux: `source .venv/bin/activate`
+3. Install the project dependencies: `pip install -r requirements.txt`
+4. Start the development server: `python manage.py runserver`
+5. In poweshell scripts are not allowed,therefore we have to switch to cmd from terminal settings/vs code settings.
+
+Please note that this project uses a virtual environment (`.venv`) to manage its dependencies. It is recommended to activate the virtual environment before running the project.
+
+[Include any additional information or instructions specific to your project]
+
+Contributions and Issue Reporting:
+Contributions and feedback are welcome! If you encounter any issues or have suggestions for improvements, please open an issue on GitHub.
+
+License:
+[Specify the license under which your project is shared]
+
